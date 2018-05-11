@@ -36,6 +36,7 @@ p Class.superclass     # => Module
 - 删除方法：两种方法，Module#undef_method(比较蛮横，会删除包括继承而来的所有方法) 和 Module#remove_method(比较温柔，只删除接收者自己的方法，而保留继承来的方法);
 - 用 Module#attr_* 方法定义访问器。Module#attr_reader 可以生成读方法，Module#attr_writer 可以生成写方法，而Module#attr_accessor 可以同时生成两者；
 - alias_method 方法相当于复制并重命名一个方法，而不改变原方法；
+- 钩子方法（Hook Method），提供了一种方式用于在程序运行时扩展程序的行为。
 
 
 ### lambda与proc的区别
